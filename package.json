@@ -12,14 +12,14 @@
     "csv-parser": "^3.0.0",
     "csv-writer": "^1.6.0"
   },
-	"keywords": [
-	"node",
-	"npm",
-	"csv",
-	"array",
-  "converter",
-	"csv convert to array",
-  "array convert to csv file"
+  "keywords": [
+    "node",
+    "npm",
+    "csv",
+    "array",
+    "converter",
+    "csv convert to array",
+    "array convert to csv file"
   ],
   "author": "David Colatti"
 }
