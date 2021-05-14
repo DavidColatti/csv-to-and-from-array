@@ -1,10 +1,25 @@
 {
-  "name": "csv-array-converter",
-  "version": "1.0.0",
+  "name": "csv-to-and-from-array",
+  "version": "0.1.0",
   "main": "index.js",
+  "description": "This package is two simple functions that allows a user to convert a csv file to an array or vice versa.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidColatti/csv-to-and-from-array"
+  },
   "dependencies": {
     "csv-parser": "^3.0.0",
     "csv-writer": "^1.6.0"
-  }
+  },
+	"keywords": [
+	"node",
+	"npm",
+	"csv",
+	"array",
+  "converter",
+	"csv convert to array",
+  "array convert to csv file"
+  ],
+  "author": "David Colatti"
 }
