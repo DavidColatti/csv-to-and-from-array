@@ -10,8 +10,10 @@ Install using yarn or npm:
 ```javascript
 const { csvFileToArray, arrayToCsvFile } = require("csv-to-and-from-array");
 
-// An asynchronous function that takes one object parameter that contains the file path and also a callback function that is not required.
-await csvFileToArray({
+// An asynchronous function that takes one object parameter:
+// filePath: a string, the path of the current csv file that will be converted
+// callback: function that is called once the conversion is completed, optional
+const array = await csvFileToArray({
   filePath: "./data.csv",
   callback: () => console.log("File conversion completed"),
 });
