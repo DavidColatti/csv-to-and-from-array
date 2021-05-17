@@ -20,7 +20,11 @@ const csvFileToArray = async ({ filePath, callback = () => {} }) => {
   return csvArray;
 };
 
-const arrayToCsvFile = ({ data, fileName = "output", callback = () => {} }) => {
+const arrayToCsvFile = ({
+  data,
+  filePath = "output.csv",
+  callback = () => {},
+}) => {
   if (data.length === 0) {
     console.log("Your data array is empty");
     return data;
@@ -31,7 +35,7 @@ const arrayToCsvFile = ({ data, fileName = "output", callback = () => {} }) => {
   }, []);
 
   const csvWriter = createCsvWriter({
-    path: `${fileName}.csv`,
+    path: filePath,
     header,
   });
 
